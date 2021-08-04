@@ -104,10 +104,10 @@
                             <td></td>
                             <td ><strong></strong></td>
                             <td width="10%" style="border-top: 1px solid black;  white-space: nowrap;" ><strong>
-                                <span><t t-esc="total"/></span>
+                                <span><t t-esc="total" t-options='{"widget": "float", "precision": 2}'/></span>
                             </strong></td>
                              <td width="10%" style="border-top: 1px solid black;  white-space: nowrap;"><strong>
-                                <span><t t-esc="total1"/></span>
+                                <span><t t-esc="total1" t-options='{"widget": "float", "precision": 2}'/></span>
                             </strong></td>
                             <td></td>
                       </tr>
@@ -127,18 +127,18 @@
                         </div>
 
 
-                          <div class="col-4">
+                  <div class="col-2">
 
                    <div class="text-right ">
-                    <strong>رئيس الحسابات</strong>
+                    <strong></strong>
 
                     </div>
                         </div>
 
                   <div class="col-4">
 
-                   <div class="text-right  ">
-                    <strong>المدقق الداخلي</strong>
+                   <div class="text-right">
+                    <strong>رئيس الحسابات</strong>
 
                     </div>
               </div>
