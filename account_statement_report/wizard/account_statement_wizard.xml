@@ -28,5 +28,5 @@
         <field name="target">new</field>
     </record>
 
-    <menuitem id="menu_account_statement_wiz" parent="account.account_reports_management_menu" action="action_account_statement_wiz"/>
+    <menuitem id="menu_account_statement_wiz" sequence="0" parent="account.menu_finance_reports" action="action_account_statement_wiz"/>
 </odoo>
