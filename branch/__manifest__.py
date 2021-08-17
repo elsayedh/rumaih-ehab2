@@ -96,6 +96,8 @@ operating-Unit Operation for POS,operating-Unit Operation for Sales,operating-Un
         'security/multi_branch.xml',
         'security/ir.model.access.csv',
         'views/res_branch_view.xml',
+        'views/res_department_view.xml',
+        'views/res_divison_view.xml',
         'views/res_branch_expenses_view.xml',
         'views/inherited_res_users.xml',
         'views/inherited_sale_order.xml',

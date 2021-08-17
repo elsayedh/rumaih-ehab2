@@ -26,6 +26,19 @@ class ExpensesResBranch(models.Model):
             res.append((record.id, name))
         return res
 
+class ResBranch(models.Model):
+    _name = 'res.division'
+    _description = 'Division'
+
+    name = fields.Char(required=True)
+
+
+class ResBranch(models.Model):
+    _name = 'res.department'
+    _description = 'Department'
+
+    name = fields.Char(required=True)
+
 
 class ResBranch(models.Model):
     _name = 'res.branch'

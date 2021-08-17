@@ -27,6 +27,7 @@ class AccountMove(models.Model):
     branch_id = fields.Many2one('res.branch', string="Branch")
 
 
+
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
@@ -43,3 +44,5 @@ class AccountMoveLine(models.Model):
         return res
 
     branch_id = fields.Many2one('res.branch', string="Branch")
+    division_id = fields.Many2one('res.division', string="Division")
+    department_id = fields.Many2one('res.department', string="Department")

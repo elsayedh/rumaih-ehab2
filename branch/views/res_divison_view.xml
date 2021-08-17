@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>        
+
+        <!-- Form View of division-->
+        <record id="division_res_division_view_form" model="ir.ui.view">
+            <field name="name">division.res.division.view.form</field>
+            <field name="model">res.division</field>
+            <field name="arch" type="xml">
+                <form string="division">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+
+                            </group>
+
+                        </group>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree View of division-->
+        <record id="division_res_division_view_tree" model="ir.ui.view">
+            <field name="name">division.res.division.view.tree</field>
+            <field name="model">res.division</field>
+            <field name="arch" type="xml">
+                <tree string="division">
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!--View action for division form view and tree view-->
+        <record id="division_action_res_division" model="ir.actions.act_window">
+            <field name="name">division</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.division</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click here to create a new division.
+                </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="division_menu_res_division" name="division"  parent="base.menu_users" action="division_action_res_division" />
+
+    </data>
+</odoo>
