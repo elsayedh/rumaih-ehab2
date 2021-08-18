@@ -56,6 +56,8 @@
                     <thead>
                         <tr style="white-space: nowrap;background-color: #f2f2f2;  " class="text-center">
                             <th>الفرع</th>
+                             <th >القسم</th>
+                             <th >الاداره</th>
                             <th>النشاط</th>
                             <th>رقم الحساب</th>
                             <th>اسم الحساب</th>
@@ -71,6 +73,12 @@
                         <tr  >
                             <td >
                                 <span t-field="line.branch_id" />
+                            </td>
+                             <td >
+                                <span t-field="line.division_id" />
+                            </td>
+                             <td >
+                                <span t-field="line.department_id" />
                             </td>
                               <td  >
                                 <span t-field="line.analytic_account_id" />
@@ -101,6 +109,8 @@
 
                         <td></td>
                             <td></td>
+                            <td></td>
+                             <td></td>
                             <td></td>
                             <td ><strong></strong></td>
                             <td width="10%" style="border-top: 1px solid black;  white-space: nowrap;" ><strong>
